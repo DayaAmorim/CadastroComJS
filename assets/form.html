@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {},
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+        
+      </style>
+  </head>
+
+  <body class="text-xl text-gray-600 font-semibold bg-gray-100">
+
+    <p id="user" class="m-2">Visitante</p>
+
+    <form action="" class="flex flex-col items-center bg-gray-50 space-y-6">
+
+        <h1 class="text-4xl text-black font-black m-5 underline">Formulario</h1>
+
+      <label for="nome" class="mt-8">Nome</label>
+      <input id="nome" type="text" class="bg-gray-300 w-1/4 text-center text-black p-2"/>
+
+      <label for="cep">CEP</label>
+      <input id="cep" type="text" class="bg-gray-300 w-1/4 text-center text-black p-2"  />
+
+      <label for="idade">Idade</label>
+      <input id="idade" type="number" class="bg-gray-300 w-1/4 text-center text-black p-2" />
+
+      <label for="cidade">Cidade</label>
+      <input id="cidade" type="text" class="bg-gray-300 w-1/4 text-center text-black p-2" />
+
+      <label for="email">Email</label>
+      <input id="email" type="email" class="bg-gray-300 w-1/4 text-center text-black p-2" />
+
+      <button onclick="validar()" class="bg-blue-400 text-2xl  px-4 py-3 rounded hover:bg-blue-300 hover:ring text-white" id="button"  >Confirmar<button>
+
+    </form>
+  </body>
+  <script src="../js/form.js"></script>
+</html>
